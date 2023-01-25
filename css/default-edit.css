@@ -1,3 +1,24 @@
+/* ---buttons--- */
+.default-button {
+    min-height: 63px;
+    padding: 10px 35px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--theme__color1);
+    color: #fff;
+    transition: 0.3s;
+}
+.default-button:hover {
+    color: #fff;
+    background: var(--theme__color2);
+}
+/* ---buttons---end */
+
 /* small-tools */
 .underline {
     text-decoration: underline !important;
