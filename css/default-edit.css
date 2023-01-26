@@ -1,7 +1,7 @@
 /* ---buttons--- */
 .default-button {
     min-height: 63px;
-    padding: 10px 35px;
+    padding: 10px 34px;
     font-size: 20px;
     font-weight: 400;
     font-family: var(--poppins);
@@ -11,11 +11,17 @@
     text-align: center;
     background: var(--theme__color1);
     color: #fff;
+    border: 1px solid transparent;
     transition: 0.3s;
 }
 .default-button:hover {
     color: #fff;
     background: var(--theme__color2);
+}
+
+.default-button--bordered-white {
+    border-color: #fff;
+    background: transparent;
 }
 /* ---buttons---end */
 
