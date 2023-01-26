@@ -86,6 +86,11 @@
     });
   });
 
+  // cookie-close
+  $(".cookie-close-button").click(function () {
+    $("#cookie-popup").addClass("hidden");
+  });
+
   // custom step-progress
   $("body").addClass("step1").attr("step-progress", "1");
   $(".step-progress-next").click(function () {

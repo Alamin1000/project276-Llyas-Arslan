@@ -23,6 +23,18 @@
     border-color: #fff;
     background: transparent;
 }
+.default-button--bordered-white:hover {
+    color: var(--theme__color2);
+    background: #fff;
+}
+
+.default-button--white {
+    background: #fff;
+    color: var(--theme__color2);
+}
+.default-button--white:hover {
+    background: var(--theme__color1);
+}
 /* ---buttons---end */
 
 /* small-tools */
