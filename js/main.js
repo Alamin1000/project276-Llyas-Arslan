@@ -85,6 +85,46 @@
       },
     });
   });
+
+  // custom step-progress
+  $("body").addClass("step1").attr("step-progress", "1");
+  $(".step-progress-next").click(function () {
+    var stepCurrent = $("body").attr("step-progress");
+    $("body").attr("step-progress", stepCurrent - "-1");
+  });
+  $(".step-progress-next").click(function () {
+    var stepCurrent2 = $("body").attr("step-progress");
+    $("body").addClass("step" + stepCurrent2);
+    var selector = ".all-step-progress .step:nth-child(" + stepCurrent2 + ")";
+    $(selector).addClass("active");
+    $(".all-step-progress .step").removeClass("current");
+    $(selector).addClass("current");
+    var selector2 = ".all-step-content .step:nth-child(" + stepCurrent2 + ")";
+    $(".all-step-content .step").removeClass("active");
+    $(selector2).addClass("active");
+  });
+  $(".step-progress-prev").click(function () {
+    var stepCurrent = $("body").attr("step-progress");
+    var stepCurrent3 = $("body").attr("step-progress");
+    var one = 1;
+    if (stepCurrent3 > one) {
+      $("body").attr("step-progress", stepCurrent - "1");
+    }
+  });
+  $(".step-progress-prev").click(function () {
+    var stepCurrent2 = $("body").attr("step-progress");
+    $("body").removeClass("step" + (stepCurrent2 - "-1"));
+    var selector =
+      ".all-step-progress .step:nth-child(" + (stepCurrent2 - -1) + ")";
+    var prevSelector =
+      ".all-step-progress .step:nth-child(" + (stepCurrent2 - 0) + ")";
+    $(selector).removeClass("active");
+    $(selector).removeClass("current");
+    $(prevSelector).addClass("current");
+    var selector2 = ".all-step-content .step:nth-child(" + stepCurrent2 + ")";
+    $(".all-step-content .step").removeClass("active");
+    $(selector2).addClass("active");
+  });
 })(jQuery);
 
 $(document).ready(function () {
