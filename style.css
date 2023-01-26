@@ -445,6 +445,8 @@ p:last-child{
 }
 .input-x.nice-select {
   border-color: transparent;
+  display: flex;
+  align-items: center;
 }
 .input-x.nice-select .current {
   line-height: 1.4;

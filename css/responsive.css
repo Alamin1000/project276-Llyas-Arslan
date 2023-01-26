@@ -460,14 +460,13 @@
     .hero-form__main {
         min-height: 318px;
     }
-    .input-x.nice-select .current {
-        line-height: 1.6;
-    }
     .input-x-outer .r-icon {
         width: 14px;
         right: 15px;
     }
-
+    .input-x {
+        min-height: 43px;
+    }
     .hero-section__inner {
         padding: 100px 0 50px;
     }
