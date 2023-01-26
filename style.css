@@ -25,7 +25,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: var(--poppins);
 }
-a, a:active, a:focus, a:active, a:hover {
+a, a:active, a:active, a:hover {
   text-decoration:none !important;
   color: inherit;
 }
@@ -406,7 +406,7 @@ p:last-child{
   min-width: 218px;
 }
 .hero-form__main {
-  min-height: 456px;
+	min-height: 465px;
 }
 /* ---hero-section---end */
 
@@ -710,6 +710,9 @@ p:last-child{
   display: flex;
   align-items: center;
 }
+.pcl-icon * {
+  transition: 0.3s;
+}
 .pcl-icon__bx {
   height: calc(var(--wd) * 0.7);
   width: calc(var(--wd) * 0.7);
@@ -905,6 +908,9 @@ p:last-child{
 }
 .technique-card__content .bottom-button {
   margin-top: auto;
+}
+.technique-card__content .bottom-button:hover {
+  color: #fff;
 }
 .technique-card:hover .technique-card__content .bottom-button {
   background: var(--theme__color1);
@@ -1171,9 +1177,10 @@ p:last-child{
   font-size: 20px;
   font-weight: 400;
   color: var(--lt__text);
+  transition: 0.3s;
 }
 .f-menu li a:hover {
-
+  color: var(--theme__color2);
 }
 .f-menu li a .strong {
   color: var(--theme__color2);
