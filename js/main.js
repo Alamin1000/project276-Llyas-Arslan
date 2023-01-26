@@ -37,9 +37,12 @@
       '<span class="far fa-chevron-right"></span>',
     ],
     responsive: {
-      0: {},
-      600: {},
-      1000: {},
+      0: {
+        items: 1,
+      },
+      767: {
+        items: 3,
+      },
     },
   });
   $(".testimonial-slider-active").owlCarousel({
@@ -54,9 +57,12 @@
       '<span class="far fa-chevron-right"></span>',
     ],
     responsive: {
-      0: {},
-      600: {},
-      1000: {},
+      0: {
+        items: 1,
+      },
+      767: {
+        items: 2,
+      },
     },
   });
 
