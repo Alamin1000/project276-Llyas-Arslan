@@ -624,6 +624,9 @@ body.rtl-page .form-progress-nav .step:first-child:after {
   transition: 0.3s;
   color: var(--theme) !important;
 }
+.rtl-page .slider-arrow-1 .owl-nav button i {
+  transform: rotateY(180deg);
+}
 .slider-arrow-1 .owl-nav button:hover {
   background: var(--theme);
   color: var(--hov) !important;

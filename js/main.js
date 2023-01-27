@@ -33,8 +33,8 @@
     dots: false,
     center: true,
     navText: [
-      '<span class="far fa-chevron-left"></span>',
-      '<span class="far fa-chevron-right"></span>',
+      '<i class="far fa-chevron-left"></i>',
+      '<i class="far fa-chevron-right"></i>',
     ],
     responsive: {
       0: {
@@ -55,8 +55,8 @@
     nav: true,
     dots: false,
     navText: [
-      '<span class="far fa-chevron-left"></span>',
-      '<span class="far fa-chevron-right"></span>',
+      '<i class="far fa-chevron-left"></i>',
+      '<i class="far fa-chevron-right"></i>',
     ],
     responsive: {
       0: {
