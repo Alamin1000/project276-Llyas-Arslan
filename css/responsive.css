@@ -375,6 +375,14 @@
         gap: 15px;
         align-items: center;
     }
+
+    .float-buttons .sqr-a .txt {
+        display: none;
+    }
+    .float-buttons {
+        bottom: 20px;
+        --hor: 15px;
+    }
 }
 
 
@@ -462,7 +470,7 @@
     }
     .input-x-outer .r-icon {
         width: 14px;
-        right: 15px;
+        --hor: 15px;
     }
     .input-x {
         min-height: 43px;

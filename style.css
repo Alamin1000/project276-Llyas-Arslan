@@ -25,6 +25,9 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: var(--poppins);
 }
+.rtl-page {
+  direction: rtl;
+}
 a, a:active, a:active, a:hover {
   text-decoration:none !important;
   color: inherit;
@@ -370,7 +373,10 @@ p:last-child{
   right: -7px;
   transform: translate(100%,-50%);
 }
-.form-progress-nav .step:last-child:after {
+body:not(.rtl-page) .form-progress-nav .step:last-child:after {
+  display: none;
+}
+body.rtl-page .form-progress-nav .step:first-child:after {
   display: none;
 }
 .form-progress-nav .step.current {
@@ -426,10 +432,15 @@ p:last-child{
   position: relative;
 }
 .input-x-outer .r-icon {
+  --hor: 23px;
   position: absolute;
   top: 50%;
-  right: 23px;
+  right: var(--hor);
   transform: translate(0,-50%);
+}
+.rtl-page .input-x-outer .r-icon {
+  right: auto;
+  left: var(--hor);
 }
 .input-x {
   min-height: 64px;
@@ -711,6 +722,7 @@ p:last-child{
   --env-bg: white;
   display: flex;
   align-items: center;
+  direction: ltr;
 }
 .pcl-icon * {
   transition: 0.3s;
@@ -1012,6 +1024,10 @@ p:last-child{
   top: -110px;
   right: 0;
 }
+.rtl-page .testimonial-slider .owl-nav {
+  left: 0;
+  right: unset;
+}
 .testimonial-slide {
   padding: 40px 60px;
   background: #F8F8F8;
@@ -1130,7 +1146,10 @@ p:last-child{
 	right: 0;
 	transform: translate(50%,-50%);
 }
-.success-count:last-child:after {
+body:not(.rtl-page) .success-count:last-child:after {
+  display: none;
+}
+body.rtl-page .success-count:first-child:after {
   display: none;
 }
 .success-count h3 {
@@ -1213,6 +1232,17 @@ p:last-child{
 }
 .sqr-a .icon {
   width: 72px;
+}
+.float-buttons {
+  --hor: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: var(--hor);
+  z-index: 99;
+}
+.rtl-page .float-buttons {
+  right: unset;
+  left: var(--hor);
 }
 /* ---footer-section---end */
 

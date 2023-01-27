@@ -215,6 +215,10 @@
 .nice-select:after {
     margin-top: -2px;
 }
+.rtl-page .nice-select::after {
+    right: unset;
+    left: 12px;
+}
 .nice-select .list .option,
 .nice-select.open .list .option {
     font-size: 16px;
@@ -254,4 +258,5 @@
     width: 38px;    /* Width of image */
     height: 38px;   /* Height of image */
     color: transparent;
+    display: none !important;
 }
